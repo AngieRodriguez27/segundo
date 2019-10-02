@@ -1,0 +1,64 @@
+package compañiatrans;
+public class Tiquete {
+
+    public Tiquete() {
+    }
+
+    private int numV;
+    private String fecha;
+    private String hora;
+    private String nombre;
+    private int costo;
+
+   
+    public int getNumV() {
+        return numV;
+    }
+
+   
+    public void setNumV(int numV) {
+        this.numV = numV;
+    }
+
+    
+    public String getFecha() {
+        return fecha;
+    }
+
+   
+    public void setFecha(String fecha) {
+        this.fecha = fecha;
+    }
+
+    
+    public String getHora() {
+        return hora;
+    }
+
+    public void setHora(String hora) {
+        this.hora = hora;
+    }
+
+  
+    public String getNombre() {
+        return nombre;
+    }
+
+    
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public int getCosto() {
+        return costo;
+    }
+
+   
+    public void setCosto(int costo) {
+        this.costo = costo;
+    }
+    
+    
+    
+    
+}
