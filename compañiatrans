@@ -1,0 +1,31 @@
+package compañiatrans;
+
+import javax.swing.JOptionPane;
+
+public class CompañiaTrans {
+    Tiquete t;
+    int conta;
+    public CompañiaTrans() {
+        t = new Tiquete();
+    }
+    
+    public static void main(String[] args) {
+        CompañiaTrans c = new CompañiaTrans();
+        c.imprimir();
+    }
+    public void imprimir(){
+      int cotT=0;
+      
+      for (int i=0;i<3;i++){
+      t.setNombre(JOptionPane.showInputDialog("digite nombre: "));
+      t.setNumV(Integer.parseInt(JOptionPane.showInputDialog("digite numero de viaje: ")));
+      t.setFecha(JOptionPane.showInputDialog("digite la fecha: "));
+      t.setHora(JOptionPane.showInputDialog("digite hora: "));
+      t.setCosto(Integer.parseInt(JOptionPane.showInputDialog("digite el costo del tiquete: ")));
+      conta = (t.getCosto());
+      cotT = cotT + conta;
+      JOptionPane.showMessageDialog(null,"Nombre: "+t.getNombre()+"\nNumero de viaje: "+t.getNumV()+"\nFecha: " +t.getFecha()+"\nHora: " +t.getHora()+"\nCosto: "+t.getCosto());
+    }
+    JOptionPane.showMessageDialog(null, "Costo total: "+cotT);
+}
+}
